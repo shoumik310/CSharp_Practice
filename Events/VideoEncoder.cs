@@ -11,9 +11,13 @@ public class VideoEncoder
 
     //--Naming convention is 'EventName'EventHandler(object source, EventArgs eventArgs);
     //public delegate void VideoEncodedEventHandler(object source, EventArgs eventArgs);
-    public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args); // To sent data with event
 
-    public event VideoEncodedEventHandler VideoEncoded;
+    //public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args); // To sent data with event
+
+    //public event VideoEncodedEventHandler VideoEncoded;
+
+    //public event EventHandler VideoEncoded; 
+    public event EventHandler<VideoEventArgs> VideoEncoded;
 
     public void Encode(Video video)
     {
