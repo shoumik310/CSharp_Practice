@@ -1,1 +1,1 @@
-# CSharp_Practice
+# Projects created for practicing C#
