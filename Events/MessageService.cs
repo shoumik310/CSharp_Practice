@@ -5,8 +5,14 @@
 public class MessageService
 {
     //Naming convention: same name as event call
-    public void onVideoEncoded(object source, EventArgs eventArgs)
+    //public void onVideoEncoded(object source, EventArgs eventArgs)
+    //{
+    //    Console.WriteLine("MessageService: Sending an Message... ");
+    //}
+
+    public void onVideoEncoded(object source, VideoEventArgs args
+        )
     {
-        Console.WriteLine("MessageService: Sending an Message... ");
+        Console.WriteLine("MessageService: Sending an Message... " + args.Video.Title);
     }
 }
